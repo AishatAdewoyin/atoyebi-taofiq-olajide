@@ -10,8 +10,7 @@
     };
 
 
-   /* preloader
-    * -------------------------------------------------- */
+   /* preloader */
     const ssPreloader = function() {
 
         const siteBody = document.querySelector('body');
@@ -33,11 +32,10 @@
             });
         });
 
-    }; // end ssPreloader
+    };
 
 
-   /* mobile menu
-    * ---------------------------------------------------- */ 
+   /* mobile menu */ 
     const ssMobileMenu = function() {
 
         const toggleButton = document.querySelector('.s-header__menu-toggle');
@@ -73,11 +71,10 @@
             }
         });
 
-    }; // end ssMobileMenu
+    };
 
 
-   /* swiper
-    * ------------------------------------------------------ */ 
+   /* swiper */ 
     const ssSwiper = function() {
 
         const homeSliderSwiper = new Swiper('.home-slider', {
@@ -140,8 +137,7 @@
     }; // end ssSwiper
 
 
-   /* mailchimp form
-    * ---------------------------------------------------- */ 
+   /* mailchimp form */ 
     const ssMailChimpForm = function() {
 
         const mcForm = document.querySelector('#mc-form');
@@ -276,8 +272,7 @@
     }; // end ssMailChimpForm
 
 
-   /* alert boxes
-    * ------------------------------------------------------ */
+   /* alert boxes */
     const ssAlertBoxes = function() {
 
         const boxes = document.querySelectorAll('.alert-box');
@@ -299,8 +294,7 @@
     }; // end ssAlertBoxes
 
 
-    /* Back to Top
-    * ------------------------------------------------------ */
+    /* Back to Top */
     const ssBackToTop = function() {
 
         const pxShow = 900;
@@ -319,11 +313,10 @@
             }
         });
 
-    }; // end ssBackToTop
+    };
 
 
-   /* smoothscroll
-    * ------------------------------------------------------ */
+   /* smoothscroll */
     const ssMoveTo = function() {
 
         const easeFunctions = {
@@ -362,11 +355,10 @@
             moveTo.registerTrigger(trigger);
         });
 
-    }; // end ssMoveTo
+    }; //
 
 
-   /* Initialize
-    * ------------------------------------------------------ */
+   /* Initialize */
     (function ssInit() {
 
         ssPreloader();
