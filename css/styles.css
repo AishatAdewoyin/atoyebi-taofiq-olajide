@@ -5,23 +5,17 @@
 	--font-1: "Roboto Flex", sans-serif;
 	--font-2: "DM Serif Display", Serif;
 
-  /* monospace
-   */
+  /* monospace */
 	--font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
 
 
 :root {
-  /* color-1(#EA9010)
-   * color-2(#343D35)
-   * color-3(#FEF5E4)
-   */
 	--color-1: hsla(35, 87%, 49%, 1);
 	--color-2: hsla(127, 8%, 22%, 1);
 	--color-3: hsla(39, 93%, 95%, 1);
 
-  /* theme color variations
-   */
+  /* theme color variations */
 	--color-1-lightest             : hsla(35, 87%, 96%, 1);
 	--color-1-lighter              : hsla(35, 87%, 69%, 1);
 	--color-1-light                : hsla(35, 87%, 59%, 1);
@@ -39,10 +33,7 @@
 	--color-3-dark                 : hsla(39, 93%, 85%, 1);
 	--color-3-darker               : hsla(39, 93%, 75%, 1);
 
-  /* feedback colors
-   * color-error(#ffd1d2), color-success(#c8e675), 
-   * color-info(#d7ecfb), color-notice(#fff099)
-   */
+  /* feedback colors */
 	--color-error                  : hsla(359, 100%, 91%, 1);
 	--color-success                : hsla(76, 69%, 68%, 1);
 	--color-info                   : hsla(205, 82%, 91%, 1);
@@ -55,7 +46,7 @@
   /* shades 
    * generated using 
    * Tint & Shade Generator 
-   * (https                     ://maketintsandshades.com/)
+   * (https://maketintsandshades.com/)
    */
 	--color-black                  : #000000;
 	--color-gray-19                : #121212;
@@ -79,21 +70,18 @@
 	--color-gray-1                 : #f8f8f8;
 	--color-white                  : #ffffff;
 
-  /* text
-   */
+  /* text */
 	--color-text                   : var(--color-gray-18);
 	--color-text-dark              : #181818;
 	--color-text-light             : var(--color-gray-14);
 	--color-placeholder            : var(--color-gray-12);
 
-  /* link
-   */
+  /* link */
 	--color-link                   : var(--color-1);
 	--color-link-hover             : var(--color-2-lighter);
 	--color-link-active            : var(--color-2-lighter);
 
-  /* buttons
-   */
+  /* buttons */
 	--color-btn                    : var(--color-gray-4);
 	--color-btn-text               : var(--color-text);
 	--color-btn-hover              : var(--color-gray-5);
@@ -107,22 +95,18 @@
 	--color-btn-stroke-hover       : var(--color-text-dark);
 	--color-btn-stroke-hover-text  : var(--color-white);
 
-  /* preloader
-   */
+  /* preloader */
 	--color-preloader-bg           : var(--color-2-dark);
 	--color-loader                 : var(--color-white);
 	--color-loader-light           : var(--color-2-light);
 
-  /* others
-   */
+  /* others */
 	--color-body                   : white;
 	--color-border                 : rgba(0, 0, 0, .1);
 	--border-radius                : 5px;
 }
 
-/* ------------------------------------------------------------------- 
- * ## spacing and typescale
- * ------------------------------------------------------------------- */
+/* spacing and typescale */
 :root {
   /* spacing
    * base font size: 20px 
@@ -133,8 +117,7 @@
 	--base-font-size   : calc(2rem * var(--multiplier));
 	--space            : calc(3.2rem * var(--multiplier));
 
-  /* vertical spacing 
-   */
+  /* vertical spacing */
 	--vspace-0_125     : calc(0.125 * var(--space));
 	--vspace-0_25      : calc(0.25 * var(--space));
 	--vspace-0_375     : calc(0.375 * var(--space));
@@ -201,12 +184,11 @@
 	--text-huge-2      : calc(var(--text-huge-1) * var(--text-scale-ratio));
 	--text-huge-3      : calc(var(--text-huge-2) * var(--text-scale-ratio));
 
-  /* default button height
-   */
-	--vspace-btn       : var(--vspace-2);
+  /* default button height */
+	--vspace-btn: var(--vspace-2);
 }
 
-/* on mobile devices below 600px, change the value of '--multiplier' 
+/* on mobile devices below 600px, change the value of 'multiplier' 
  * to adjust the values of base font size and vertical space unit.
  */
 @media screen and (max-width: 600px) {
@@ -215,13 +197,10 @@
 	}
 }
 
-/* ------------------------------------------------------------------- 
- * ## grid variables
- * ------------------------------------------------------------------- */
+/* grid variables */
 :root {
   
-  /* widths for rows and containers
-   */
+  /* widths for rows and containers */
 	--width-sixteen-cols: 1760px;
 	--width-default     : 1320px;
 	--width-wide        : 1600px;
@@ -232,21 +211,18 @@
 	--width-full        : 100%;
 	--width-grid-max    : var(--width-default);
 
-  /* gutter
-   */
+  /* gutter */
 	--gutter            : 2.4rem;
 }
 
-/* on large screen devices
- */
+/* on large screen devices */
 @media screen and (max-width: 1000px) {
 	:root {
 		--gutter: 2.2rem;
 	}
 }
 
-/* on small devices
- */
+/* on small devices */
 @media screen and (max-width: 600px) {
 	:root {
 		--gutter: 1rem;
@@ -255,15 +231,10 @@
 
 
 
-/* ====================================================================
- * # CSS RESET
- *
- *
- * --------------------------------------------------------------------
+/*
+ * CSS RESET
  * http://meyerweb.com/eric/tools/css/reset/ 
- * v2.0 | 20110126
- * License: none (public domain)
- * -------------------------------------------------------------------- */
+ */
 html,
 body,
 div,
@@ -1034,13 +1005,9 @@ textarea {
 }
 
 
-/* ===================================================================
- * # TYPOGRAPHY 
- *
- *
- * ------------------------------------------------------------------- 
+/*
+ * TYPOGRAPHY 
  * type scale - ratio 1:2 | base: 20px
- * -------------------------------------------------------------------
  *
  * --text-huge-3    = (148.60px)
  * --text-huge-2    = (123.83px)
@@ -1056,12 +1023,11 @@ textarea {
  * --text-size      = (20.00px) BASE
  * --text-sm        = (16.67px)
  * --text-xs        = (13.89px)
- *
- * -------------------------------------------------------------------- */
+ */
 
-/* --------------------------------------------------------------------
- * ## base type styles
- * -------------------------------------------------------------------- */
+/*
+ * base type styles
+ */
 body {
 	font-family: var(--font-1);
 	font-size  : var(--base-font-size);
@@ -1532,8 +1498,7 @@ dd {
 	margin-left: -0.2em;
 }
 
-/* definition list dictionary style 
- */
+/* definition list dictionary style */
 .dictionary-style dt {
 	display      : inline;
 	counter-reset: definitions;
@@ -1585,9 +1550,7 @@ img.u-pull-left {
 	height  : 100%;
 }
 
-/* --------------------------------------------------------------------
- * ## spacing
- * -------------------------------------------------------------------- */
+/* spacing */
 fieldset,
 button,
 .btn {
@@ -1615,12 +1578,8 @@ img,
 
 
 
-/* ===================================================================
- * # PRELOADER
- * 
- * 
- * -------------------------------------------------------------------
- * - markup:
+/* PRELOADER
+ * markup:
  *
  * <div id="preloader">
  *     <div id="loader" class="dots-fade">
@@ -1632,8 +1591,8 @@ img,
  *
  * - loader class:
  * <dots-fade | dots-jump | dots-pulse>
- *
- * ------------------------------------------------------------------- */
+*/
+
 #preloader {
 	position       : fixed;
 	display        : flex;
@@ -1817,9 +1776,7 @@ img,
 	}
 }
 
-/* ------------------------------------------------------------------- 
- * ## page loaded
- * ------------------------------------------------------------------- */
+/* page loaded */
 .ss-loaded #preloader {
 	opacity   : 0;
 	visibility: hidden;
@@ -1833,11 +1790,7 @@ img,
 
 
 
-/* ===================================================================
- * # FORM 
- *
- *
- * ------------------------------------------------------------------- */
+/* CONTACT FORM */
 fieldset {
 	border : none;
 	padding: 0;
@@ -1962,9 +1915,7 @@ label>input[type=radio] {
 	top     : 2px;
 }
 
-/* ------------------------------------------------------------------- 
- * ## style placeholder text
- * ------------------------------------------------------------------- */
+/* style placeholder text */
 
 ::-moz-placeholder {
 	/* Mozilla Firefox 19+ */
@@ -1982,9 +1933,7 @@ label>input[type=radio] {
 	color: var(--color-placeholder);
 }
 
-/* ------------------------------------------------------------------- 
- * ## change autocomplete styles in Chrome
- * ------------------------------------------------------------------- */
+/* change autocomplete styles in Chrome */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -1999,11 +1948,7 @@ select:-webkit-autofill:focus {
 	transition             : background-color 5000s ease-in-out 0s;
 }
 
-/* ===================================================================
- * # BUTTONS
- *
- *
- * ------------------------------------------------------------------- */
+/* BUTTONS */
 .btn,
 button,
 input[type=submit],
@@ -2047,8 +1992,7 @@ input[type=button]:hover {
 	outline         : 0;
 }
 
-/* button primary
- */
+/* button primary */
 .btn.btn--primary,
 button.btn--primary,
 input[type=submit].btn--primary,
@@ -2074,8 +2018,7 @@ input[type=button].btn--primary:hover {
 	color       : var(--color-btn-primary-hover-text);
 }
 
-/* button modifiers
- */
+/* button modifiers */
 .btn.u-fullwidth,
 button.u-fullwidth {
 	width       : 100%;
@@ -2121,11 +2064,7 @@ button.btn--pill {
 }
 
 
-/* ===================================================================
- * # TABLE
- *
- *
- * ------------------------------------------------------------------- */
+/* TABLE */
 table {
 	border-width   : 0;
 	width          : 100%;
@@ -2165,15 +2104,9 @@ td:last-child {
 
 
 
-/* ===================================================================
- * # COMPONENTS
- *
- *
- * ------------------------------------------------------------------- */
+/* COMPONENTS */
 
-/* -------------------------------------------------------------------
- * ## pagination 
- * ------------------------------------------------------------------- */
+/* pagination */
 .pgn {
 	--pgn-num-height: calc(var(--vspace-1) + .4rem);
 	margin          : 0 auto var(--vspace-1);
@@ -2298,19 +2231,17 @@ td:last-child {
 	background-color: transparent;
 }
 
-/* ------------------------------------------------------------------- 
+/* media queries 
  * responsive:
  * pagination
- * ------------------------------------------------------------------- */
+*/
 @media screen and (max-width: 600px) {
 	.pgn ul {
 		padding: 0 5.2rem;
 	}
 }
 
-/* ------------------------------------------------------------------- 
- * ## alert box 
- * ------------------------------------------------------------------- */
+/* alert box */
 .alert-box {
 	padding      : var(--vspace-0_75) 4rem var(--vspace-0_75) 3.2rem;
 	margin-bottom: var(--vspace-1);
@@ -2399,9 +2330,7 @@ td:last-child {
 	transition: all 0.5s;
 }
 
-/* ------------------------------------------------------------------- 
- * ## skillbars
- * ------------------------------------------------------------------- */
+/* skillbars */
 .skill-bars {
 	list-style: none;
 	margin    : var(--vspace-2) 0 var(--vspace-1);
@@ -2541,9 +2470,7 @@ td:last-child {
 	width: 100%;
 }
 
-/* --------------------------------------------------------------------
- * ## stats tabs
- * -------------------------------------------------------------------- */
+/* skill stats tabs */
 .stats-tabs {
 	padding: 0;
 	margin : var(--vspace-1) 0;
@@ -2589,11 +2516,7 @@ td:last-child {
 
 
 
-/* ===================================================================
- * # PROJECT-WIDE SHARED STYLES
- *
- *
- * ------------------------------------------------------------------- */
+/* PROJECT-WIDE SHARED STYLES */
 .width-sixteen-col {
 	--width-grid-max: var(--width-sixteen-cols);
 }
@@ -2625,9 +2548,7 @@ td:last-child {
 	margin-bottom : var(--vspace-1_5);
 }
 
-/* ------------------------------------------------------------------- 
- * ## list items
- * ------------------------------------------------------------------- */
+/* list items */
 .list-items.show-ctr {
 	counter-reset: ctr;
 }
@@ -2688,9 +2609,7 @@ td:last-child {
 	fill: var(--color-1);
 }
 
-/* ------------------------------------------------------------------- 
- * ## social list
- * ------------------------------------------------------------------- */
+/* social list */
 .social-list {
 	display    : flex;
 	align-items: center;
@@ -2728,9 +2647,7 @@ td:last-child {
 	transition: all 0.5s;
 }
 
-/* ------------------------------------------------------------------- 
- * ## blog card
- * ------------------------------------------------------------------- */
+/* blog card */
 .blog-card__header {
 	margin-bottom: var(--vspace-0_75);
 }
@@ -2752,9 +2669,7 @@ td:last-child {
 	color: var(--color-text-dark);
 }
 
-/* --------------------------------------------------------------------
- * ## testimonials
- * -------------------------------------------------------------------- */
+/* testimonials */
 .s-testimonials {
 	padding-top     : var(--vspace-4);
 	padding-bottom  : var(--vspace-3);
@@ -2829,9 +2744,7 @@ td:last-child {
 	color      : var(--color-text-light);
 }
 
-/* ------------------------------------------------------------------- 
- * ## swiper overrides
- * ------------------------------------------------------------------- */
+/* swiper overrides */
 .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
 	margin: 0 1.2rem;
 }
@@ -2852,10 +2765,9 @@ td:last-child {
 	visibility: hidden;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
+/* responsive:
  * project-wide and shared styles
- * ------------------------------------------------------------------- */
+*/
 @media screen and (max-width: 1200px) {
 	.text-display-title {
 		font-size: clamp(4rem, 8vw, var(--text-display-2));
@@ -2886,15 +2798,9 @@ td:last-child {
 
 
 
-/* ===================================================================
- * # GRID-BASED LAYOUTS
- *
- *
- * ------------------------------------------------------------------- */
+/*  GRID-BASED LAYOUTS */
 
-/* --------------------------------------------------------------------
- * ## grid block
- * -------------------------------------------------------------------- */
+/* grid block */
 .grid-block {
 	--col                : 12;
 	--grid-gap-h         : calc(var(--gutter) * 2);
@@ -2944,9 +2850,7 @@ td:last-child {
 	grid-row   : 2;
 }
 
-/* ------------------------------------------------------------------- 
- * ## list grid
- * ------------------------------------------------------------------- */
+/* list grid */
 .grid-list-items {
 	--gap                : calc(var(--gutter) * 2);
 	--min-width          : 360px;
@@ -2960,10 +2864,10 @@ td:last-child {
 	margin-bottom: var(--vspace-0_5);
 }
 
-/* ------------------------------------------------------------------- 
+/* 
  * responsive:
  * grid layouts
- * ------------------------------------------------------------------- */
+*/
 @media screen and (max-width: 1600px) {
 	.grid-section-split__header {
 		grid-column: 1/span 8;
@@ -3013,11 +2917,7 @@ td:last-child {
 
 
 
-/* ===================================================================
- * # PAGE WRAP
- *
- *
- * ------------------------------------------------------------------- */
+/* PAGE WRAP */
 .s-pagewrap {
 	display       : flex;
 	flex-direction: column;
@@ -3027,11 +2927,7 @@ td:last-child {
 }
 
 
-/* ===================================================================
- * # SITE HEADER
- *
- *
- * ------------------------------------------------------------------- */
+/* SITE HEADER */
 .s-header {
 	--header-height: 80px;
 	--logo-width   : 9.6rem;
@@ -3063,9 +2959,7 @@ td:last-child {
 	position: relative;
 }
 
-/* --------------------------------------------------------------------
- * ## logo
- * -------------------------------------------------------------------- */
+/* logo */
 .s-header__logo {
 	z-index    : 3;
 	line-height: 1;
@@ -3086,9 +2980,7 @@ td:last-child {
 	vertical-align: bottom;
 }
 
-/* --------------------------------------------------------------------
- * ## main navigation
- * -------------------------------------------------------------------- */
+/* main navigation */
 .s-header__nav {
 	margin-left    : var(--vspace-1);
 	display        : flex;
@@ -3129,15 +3021,12 @@ td:last-child {
 	color: var(--color-3);
 }
 
-/* header contact button
- */
+/* header contact button */
 .s-header__contact-btn {
 	margin: 0;
 }
 
-/* --------------------------------------------------------------------
- * ## mobile menu toggle
- * -------------------------------------------------------------------- */
+/* header mobile menu toggle */
 .s-header__menu-toggle {
 	--toggle-block-width: 44px;
 	--toggle-line-width : 28px;
@@ -3209,10 +3098,9 @@ td:last-child {
 	transform: rotate(225deg);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
+/* responsive:
  * site-header
- * ------------------------------------------------------------------- */
+*/
 @media screen and (max-width: 900px) {
 	.s-header {
 		--logo-width: 10rem;
@@ -3342,11 +3230,7 @@ td:last-child {
 
 
 
-/* ===================================================================
- * # PAGEHEADER & PAGECONTENT
- *
- *
- * ------------------------------------------------------------------- */
+/* PAGEHEADER & PAGECONTENT */
 .s-pageheader {
 	padding-top     : var(--vspace-6);
 	padding-bottom  : var(--vspace-3);
@@ -3385,10 +3269,7 @@ td:last-child {
 	margin-top: var(--vspace-2);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * pageheader & pagecontent
- * ------------------------------------------------------------------- */
+/* PAGEHEADER & PAGECONTENT responsive */
 @media screen and (max-width: 1200px) {
 
 	.s-pagecontent .pageintro h1,
@@ -3416,11 +3297,7 @@ td:last-child {
 
 
 
-/* ===================================================================
- * # INTRO
- *
- *
- * ------------------------------------------------------------------- */
+/* INTRO */
 .s-intro {
 	--content-padding-top   : max(20rem, 18vh);
 	--content-padding-bottom: 10.8rem;
@@ -3434,9 +3311,7 @@ td:last-child {
 	position                : relative;
 }
 
-/* --------------------------------------------------------------------
- * ## intro content
- * -------------------------------------------------------------------- */
+/* intro content */
 .s-intro__content {
 	z-index       : 2;
 	align-items   : center;
@@ -3548,9 +3423,7 @@ td:last-child {
 	top: 50%;
 }
 
-/* --------------------------------------------------------------------
- * ## intro scroll down
- * -------------------------------------------------------------------- */
+/* intro scroll down */
 .s-intro__scroll-down {
 	z-index    : 2;
 	grid-column: 1/10;
@@ -3588,9 +3461,7 @@ td:last-child {
 	stroke: var(--color-3);
 }
 
-/* --------------------------------------------------------------------
- * ## intro transitions
- * -------------------------------------------------------------------- */
+/* intro transitions */
 .ss-home .s-header__inner,
 .s-intro__content-media img,
 .s-intro__content-media .lines,
@@ -3681,10 +3552,7 @@ td:last-child {
 	bottom          : 0;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * intro
- * ------------------------------------------------------------------- */
+/* responsive: intro */
 @media screen and (max-width: 900px) {
 	.s-intro {
 		--content-padding-top: max(12rem, 18vh);
@@ -3787,11 +3655,7 @@ td:last-child {
 
 
 
-/* ===================================================================
- * # ABOUT
- *
- *
- * ------------------------------------------------------------------- */
+/* ABOUT */
 .s-about {
 	padding-top     : var(--vspace-6);
 	padding-bottom  : var(--vspace-6);
@@ -3839,10 +3703,7 @@ td:last-child {
 	fill: var(--color-3);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * about
- * ------------------------------------------------------------------- */
+/* responsive: about */
 @media screen and (max-width: 800px) {
 	.s-about {
 		padding-top   : var(--vspace-4);
@@ -3857,11 +3718,7 @@ td:last-child {
 
 
 
-/* ===================================================================
- * # EXPERTISE
- *
- *
- * ------------------------------------------------------------------- */
+/* EXPERTISE */
 .s-expertise {
 	padding-top   : var(--vspace-6);
 	padding-bottom: var(--vspace-5);
@@ -3871,10 +3728,7 @@ td:last-child {
 	margin-top: var(--vspace-1_5);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * expertise
- * ------------------------------------------------------------------- */
+/* responsive: expertise */
 @media screen and (max-width: 800px) {
 	.s-expertise {
 		padding-top: var(--vspace-5);
@@ -3883,11 +3737,7 @@ td:last-child {
 
 
 
-/* ===================================================================
- * # CLIENTS
- *
- *
- * ------------------------------------------------------------------- */
+/* CLIENTS */
 .s-clients {
 	padding-top     : var(--vspace-6);
 	padding-bottom  : var(--vspace-4);
@@ -3906,9 +3756,7 @@ td:last-child {
 	grid-row: auto;
 }
 
-/* --------------------------------------------------------------------
- * ## clients list
- * -------------------------------------------------------------------- */
+/* clients list */
 .clients-list {
 	display     : flex;
 	flex-flow   : row wrap;
@@ -3949,10 +3797,7 @@ td:last-child {
 	border-style: none solid solid none;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * clients
- * ------------------------------------------------------------------- */
+/* responsive: clients */
 @media screen and (max-width: 1600px) {
 	.clients-list__item {
 		width: 25%;
@@ -3993,11 +3838,7 @@ td:last-child {
 
 
 
-/* ===================================================================
- * # CTA
- *
- *
- * ------------------------------------------------------------------- */
+/* CTA */
 .s-cta {
 	padding-top     : var(--vspace-4_5);
 	padding-bottom  : var(--vspace-3_5);
@@ -4018,10 +3859,7 @@ td:last-child {
 	font-weight: 300;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * CTA
- * ------------------------------------------------------------------- */
+/* responsive: CTA */
 @media screen and (max-width: 1000px) {
 	.s-cta__content .btn {
 		width       : 100%;
@@ -4031,11 +3869,7 @@ td:last-child {
 
 
 
-/* ===================================================================
- * # JOURNAL
- *
- *
- * ------------------------------------------------------------------- */
+/* JOURNAL */
 .s-journal {
 	padding-top     : var(--vspace-6);
 	padding-bottom  : var(--vspace-3);
@@ -4087,11 +3921,7 @@ td:last-child {
 
 
 
-/* ===================================================================
- * # FOOTER
- *
- *
- * ------------------------------------------------------------------- */
+/* FOOTER */
 .s-footer {
 	font-size       : calc(var(--text-size) * 0.95);
 	font-weight     : 300;
@@ -4148,9 +3978,7 @@ td:last-child {
 	color: var(--color-3);
 }
 
-/* ------------------------------------------------------------------- 
- * ## newsletter
- * ------------------------------------------------------------------- */
+/* newsletter */
 .s-footer__newsletter input[type=email] {
 	margin-bottom   : var(--vspace-0_5);
 	background-color: var(--color-gray-18);
@@ -4172,9 +4000,7 @@ td:last-child {
 	color      : var(--color-1);
 }
 
-/* ------------------------------------------------------------------- 
- * ## copyright
- * ------------------------------------------------------------------- */
+/* copyright */
 .ss-copyright {
 	padding: var(--vspace-1) var(--vspace-1) 0;
 }
@@ -4203,9 +4029,7 @@ td:last-child {
 	display: none;
 }
 
-/* ------------------------------------------------------------------- 
- * ## go top
- * ------------------------------------------------------------------- */
+/* go top */
 .ss-go-top {
 	z-index : 2;
 	position: absolute;
@@ -4243,10 +4067,7 @@ td:last-child {
 	transition: all 0.3s ease-in-out;
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * footer
- * ------------------------------------------------------------------- */
+/* responsive: footer */
 @media screen and (max-width: 1200px) {
 	.ss-copyright {
 		margin-top: var(--vspace-0_5);
@@ -4285,11 +4106,7 @@ td:last-child {
 
 
 
-/* ===================================================================
- * # BLOG STYLES 
- *
- *
- * ------------------------------------------------------------------- */
+/* BLOG STYLES */
 .entry__header {
 	--width-grid-max: min(90%, var(--width-narrower));
 }
@@ -4418,8 +4235,7 @@ td:last-child {
 	margin-bottom: var(--vspace-0_25);
 }
 
-/* related post
- */
+/* related post */
 .related-posts {
 	margin-top: var(--vspace-1_5);
 }
@@ -4430,10 +4246,7 @@ td:last-child {
 	margin-bottom: var(--vspace-1_25);
 }
 
-/* ------------------------------------------------------------------- 
- * responsive:
- * blog styles
- * ------------------------------------------------------------------- */
+/* responsive: blog styles */
 @media screen and (max-width: 900px) {
 	.entry__media {
 		margin-top   : 0;
@@ -4469,11 +4282,7 @@ td:last-child {
 
 
 
-/* ===================================================================
- * # PAGE STYLES 
- *
- *
- * ------------------------------------------------------------------- */
+/* PAGE STYLES */
 .pagemedia {
 	margin-bottom: var(--vspace-2_5);
 }
@@ -4491,9 +4300,7 @@ td:last-child {
 	margin-top: 0;
 }
 
-/* --------------------------------------------------------------------
- * ## services page
- * -------------------------------------------------------------------- */
+/* services page */
 .list-services {
 	list-style : none;
 	font-size  : calc(var(--text-size) * 0.95);
@@ -4524,9 +4331,7 @@ td:last-child {
 	top             : calc(0.8rem + var(--vspace-0_375));
 }
 
-/* --------------------------------------------------------------------
- * ## contact page
- * -------------------------------------------------------------------- */
+/* contact page */
 .contact-cta {
 	margin-bottom: var(--vspace-2);
 }
