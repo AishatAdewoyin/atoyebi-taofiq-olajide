@@ -2581,9 +2581,13 @@ td:last-child {
 	margin-bottom: 0;
 }
 
-.list-items__item-title,
+.list-items__item-title{
+	color: var(--color-text-dark);
+	margin-top: 0;
+}
+
 .list-items__item-small-title {
-	color     : var(--color-text-dark);
+	color: var(--color-1-light);
 	margin-top: 0;
 }
 
@@ -3240,7 +3244,7 @@ td:last-child {
 
 .s-pageheader .page-title {
 	margin-top : 0;
-	font-size  : clamp(5.2rem, 10vw, var(--text-huge-1));
+	font-size  : clamp(5rem,5vw, var(--text-huge-1));
 	line-height: 1.0465;
 	color      : var(--color-3);
 }
@@ -4400,8 +4404,12 @@ td:last-child {
 }
 
 .swiper-slide p span{
-	color: var(--color-1);
+	color: var(--color-1-light);
 	font-family: cursive;
-	font-size: var(--space);
+	font-size: var(--text-xl);
 	font-weight: 600;
+}
+
+.list-items__item p strong{
+	font-family: Roboto;
 }
